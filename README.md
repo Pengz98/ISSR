@@ -1,4 +1,5 @@
-#1 Make sure that all of the dependencies including the Open3D-ML are successfully installed.  
+#1 Make sure that all of the dependencies including the Open3D-ML are successfully installed.
+Put the official Open3D-ML inside the folder, so as to utilize the configuration it provides.
 
 #2 Download the datasets (S3DIS or ScanNet) and check the 'dataset_path' in the main python file (InterPCSeg.py).
 
