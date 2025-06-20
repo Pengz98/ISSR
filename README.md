@@ -9,7 +9,7 @@ Make sure that all of the dependencies including the Open3D-ML are successfully 
 
 Put the official Open3D-ML inside the folder, so as to utilize the configuration it provides.
 
-Download the pre-trained weights following the guidance in Open3D-ML/model_zoo.md, and put those weights in Open3D-ML/logs.
+Download the pre-trained weights following the guidance in "Open3D-ML/model_zoo.md", and put those weights in "Open3D-ML/logs".
 
 
 ## 2. Dataset Preparation
