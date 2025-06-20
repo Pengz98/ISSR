@@ -764,7 +764,7 @@ def s3dis_pointtransformer(args):
     if save_dir is None:
         save_dir = timestamp
         os.makedirs(save_dir, exist_ok=True)
-        os.system(f'cp FTIS_v2.py {save_dir}/')
+        os.system(f'cp ISSR.py {save_dir}/')
 
 
     file = open(f'{save_dir}/args.txt', 'w')
@@ -924,7 +924,7 @@ def semantickitti_randlanet(args):
     if save_dir is None:
         save_dir = timestamp
         os.makedirs(save_dir, exist_ok=True)
-        os.system(f'cp FTIS_v2.py {save_dir}/')
+        os.system(f'cp ISSR.py {save_dir}/')
 
     file = open(f'{save_dir}/args.txt', 'w')
     file.write(str(args))
@@ -1040,7 +1040,7 @@ def scannet_sparseconvunet():
     if save_dir is None:
         save_dir = timestamp
         os.makedirs(save_dir, exist_ok=True)
-        os.system(f'cp FTIS_v2.py {save_dir}/')
+        os.system(f'cp ISSR.py {save_dir}/')
 
     file = open(f'{save_dir}/args.txt', 'w')
     file.write(str(args))
@@ -1060,7 +1060,7 @@ def scannet_sparseconvunet():
         mes_record_tmp = np.array([]).reshape(0,record_step)
         start_data_id = 0
 
-    selected_ids = [15, 100, 119, 137, 191, 199, 217, 230, 244, 294]
+    selected_ids = []
 
     for data_id in range(len(test_split)):
         if data_id < start_data_id: continue
